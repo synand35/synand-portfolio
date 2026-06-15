@@ -13,26 +13,26 @@ const styles = `
     position: relative;
     overflow: hidden;
   }
-  .ap-section::before {
-    content: '';
-    position: absolute;
-    top: -200px;
-    right: -200px;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(59,111,255,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .ap-section::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    left: -150px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(102,144,255,0.07) 0%, transparent 70%);
-    pointer-events: none;
-  }
+  // .ap-section::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: -200px;
+  //   right: -200px;
+  //   width: 700px;
+  //   height: 700px;
+  //   background: radial-gradient(circle, rgba(59,111,255,0.12) 0%, transparent 70%);
+  //   pointer-events: none;
+  // }
+  // .ap-section::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -100px;
+  //   left: -150px;
+  //   width: 500px;
+  //   height: 500px;
+  //   background: radial-gradient(circle, rgba(102,144,255,0.07) 0%, transparent 70%);
+  //   pointer-events: none;
+  // }
 
   .ap-container {
     max-width: 1200px;
