@@ -15,6 +15,13 @@ import devops3 from "../assets/devops.jpg";
 import devops4 from "../assets/devops.jpg";
 import devops5 from "../assets/devops.jpg";
 
+import Acceuil from "../assets/Mbm/Acceuil.png";
+import Echantillon from "../assets/Mbm/Echantillon.png";
+import Rapport from "../assets/Mbm/Rapport.png";
+import Resultat from "../assets/Mbm/Resultat.png";
+import Visullisation from "../assets/Mbm/visuallisation.png";
+import Paramtre from "../assets/Mbm/paramettre.png";
+
 const projects = [
   {
     cover: home,
@@ -26,13 +33,13 @@ const projects = [
     gallery: [home, stats, alerts, config, report],
   },
   {
-    cover: devops1,
+    cover: Acceuil,
     name: "Portfolio Personnel",
     description: "Portfolio moderne Full Stack avec animations Framer Motion, responsive design et déploiement CI/CD.",
     tags: ["React", "Vite", "TailwindCSS"],
     repo: "https://github.com/synand35/synand-portfolio",
     demo: "https://synand.dev",
-    gallery: [devops1, devops2, devops3, devops4, devops5],
+    gallery: [Acceuil, Echantillon, Resultat, Rapport, Visullisation,Rapport],
   },
   {
     cover: devops1,
@@ -258,7 +265,7 @@ function Projet() {
                     Code
                   </a>
 
-                  {project.demo && (
+                  {/* {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
@@ -268,15 +275,15 @@ function Projet() {
                       <ExternalLink size={15} />
                       Demo
                     </a>
-                  )}
+                  )} */}
 
-                  <button
+                  {/* <button
                     onClick={() => setLightbox({ project, index: 0 })}
                     className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm font-semibold text-white hover:bg-white/10 transition-all duration-200 ml-auto"
                   >
                     <Grid2x2 size={15} />
                     Galerie
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </motion.div>
@@ -290,7 +297,7 @@ function Projet() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        Synand
+        
       </motion.div>
 
     </section>

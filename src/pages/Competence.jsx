@@ -1,20 +1,20 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import database from "../assets/database.jpg";
-import backend  from "../assets/code.jpg";
-import dev      from "../assets/dev.jpg";
-import server   from "../assets/server.jpg";
+import  dev from "../assets/code.jpg";
+import    server   from "../assets/dev.jpg";
+import  backend  from "../assets/server.jpg";
 
 const skills = [
-  { num: "01.", name: "Frontend",        level: 90, tags: ["React", "Vue", "TailwindCSS", "Framer Motion"] },
-  { num: "02.", name: "Backend",         level: 82, tags: ["Node.js", "Express", "Laravel", "REST API"]    },
-  { num: "03.", name: "Base de données", level: 78, tags: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]      },
-  { num: "04.", name: "DevOps",          level: 70, tags: ["Docker", "GitHub CI/CD", "Linux", "Nginx"]     },
+  { num: "01.", name: "Frontend",        level: 90, tags: ["React", "CSS3", "TailwindCSS", "Framer Motion","Bootstrap"] },
+  { num: "02.", name: "Backend",         level: 82, tags: ["Node.js", "Express", "Python", "REST API"]    },
+  { num: "03.", name: "Base de données", level: 78, tags: ["PostgreSQL", "MySQL"]      },
+  { num: "04.", name: "DevOps",          level: 70, tags: ["Docker", "GitHub CI/CD","Kubernetes", "Linux", "Nginx"]     },
 ];
 
 const gridImages = [
-  { src: dev,      icon: "ti-brand-react",  label: "Frontend",        sub: "React · Vue · UI" },
-  { src: backend,  icon: "ti-server",       label: "Backend",         sub: "Node · Laravel"   },
+  { src: dev,      icon: "ti-brand-react",  label: "Frontend",        sub: "React · TailwindCSS · UI" },
+  { src: backend,  icon: "ti-server",       label: "Backend",         sub: "Node · Python"   },
   { src: database, icon: "ti-database",     label: "Base de données", sub: "SQL · NoSQL"      },
   { src: server,   icon: "ti-brand-docker", label: "DevOps",          sub: "Docker · CI/CD"   },
 ];

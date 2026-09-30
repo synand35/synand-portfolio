@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Globe, Mail, MapPin } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import building from "../assets/Synand.png";
 
 function Contact() {
@@ -105,6 +106,22 @@ function Contact() {
                 </a>
               </div>
 
+              {/* GitHub */}
+              <div className="flex items-center gap-3 md:gap-4 group">
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition">
+                  <FaGithub size={16} className="text-blue-500" />
+                </div>
+
+                <a
+                  href="https://github.com/Synand35"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm md:text-base text-gray-200 hover:text-blue-400 transition underline underline-offset-4 decoration-blue-500/30"
+                >
+                  github.com/Synand
+                </a>
+              </div>
+
               {/* Localisation */}
               <div className="flex items-center gap-3 md:gap-4 group">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition">
@@ -131,6 +148,7 @@ function Contact() {
         </div>
       </div>
     </section>
+    
   );
 }
 

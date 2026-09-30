@@ -232,12 +232,25 @@ function Navbar() {
           </ul>
 
           {/* Desktop CTA Contact */}
-          <button className="nav-cta nav-desktop-cta" onClick={() => scrollToSection("contact")}>
-            Contact
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
+          <div className="nav-desktop-cta" style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <a
+              href="/cv.pdf"
+              download="CV_Andoniaina.pdf"
+              className="nav-cta"
+              aria-label="Télécharger mon CV"
+            >
+              Télécharger mon CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" />
+              </svg>
+            </a>
+            <button className="nav-cta" onClick={() => scrollToSection("contact")}>
+              Contact
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
 
           {/* Mobile burger */}
           <button
@@ -260,6 +273,18 @@ function Navbar() {
               {label}
             </button>
           ))}
+          <a
+            href="/cv.pdf"
+            download="CV_Andoniaina.pdf"
+            className="nav-cta"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Télécharger mon CV"
+          >
+            Télécharger mon CV
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" />
+            </svg>
+          </a>
           <button className="nav-cta" onClick={() => { scrollToSection("contact"); setMenuOpen(false); }}>
             Contact
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
